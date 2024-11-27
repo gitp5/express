@@ -10,6 +10,8 @@ var helloRouter = require('./routes/hello');
 var notesRouter = require('./routes/notes');
 var catRouter = require('./routes/cat');
 
+//
+
 var app = express();
 
 // view engine setup
@@ -24,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/hello', helloRouter);
+//app.use('/hello', helloRouter);
 app.use('/notes', notesRouter);
 app.use('/cat', catRouter);
 
